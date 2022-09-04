@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+    /* for colors */
+    /* progress line colors */
+    --light-progress-line-blue:#cffafe;
+    --darker-progress-line-blue:#22d3ee;
+    --white-color:#ffff;
+
+    /* circle-colors */
+
+}
+
+
+body{
+    height: 100vh;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.main-container{
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.progress-container{
+
+    /* border: 2px solid pink; */
+
+    display: flex;
+    justify-content:space-between;
+
+
+    position: relative;
+
+    max-width: 100%;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+
+.progress-line{
+    height: 4px;
+    width:50%;
+    background-color: var(--darker-progress-line-blue);
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+/* circles */
+
+
+circle{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
