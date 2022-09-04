@@ -15,6 +15,7 @@
     --light-progress-line-blue:#cffafe;
     --darker-progress-line-blue:#22d3ee;
     --white-color:#ffff;
+    --faded-back-line:#e5e7eb;
 
     /* circle-colors */
 
@@ -52,6 +53,25 @@ body{
     margin-bottom: 30px;
 }
 
+/* there will be exact white line in the back side of progress container */
+
+.progress-container::before{
+    content: '';
+    height: 4px;
+    width:100%;
+    background-color: var(--faded-back-line);
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index:-1;
+    transform: translateY(-50%);
+    /* transition-property: width; */
+
+ 
+}
+
+
 
 .progress-line{
     height: 4px;
@@ -63,17 +83,18 @@ body{
     left: 0;
     z-index: -1;
     transform: translateY(-50%);
+    transition-property: width;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+ 
 }
+
+
 
 
 /* circles */
 
 
-circle{
+.circle{
     height:30px;
     width: 30px;
     border-radius: 50%;
