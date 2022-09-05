@@ -141,6 +141,6 @@ body{
 
 
 .btn:disabled{
-    background-color: var();
+    background-color: var(--light-progress-line-blue);
     cursor: not-allowed;
 }
