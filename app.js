@@ -16,8 +16,11 @@ Next.addEventListener('click',function(){
     if(currActive<circles.length){
         currActive++;
     }
-    // if(currActive===circles.length){
-    //     currActive=1;
-    // }
+   
     console.log(currActive);
+});
+
+
+Prev.addEventListener('click',function(){
+    
 })
